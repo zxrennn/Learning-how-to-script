@@ -35,7 +35,7 @@ h1 {
         document.onclick = function(e) {
             const emojis = ['😀','😂','😭','😩','😤','🥶','🥵','😎','🤓','🥴','😵','🤯','😈','👿',];
 
-            const el = document.createElement('div')
+            const el = document.createElement('div');
             el.textContent = emojis[Math.floor(Math.random()*emojis.length)];
             el.style.position = 'fixed';
             el.style.left = e.clientX + 'px';
