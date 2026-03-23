@@ -31,6 +31,20 @@ h1 {
     <button onclick="document.body.style.backgroundColor = 'blue'">Blue</button>
 <button onclick="document.body.style.backgroundColor = 'black'">Black</button>
 <button onclick="document.body.style.backgroundColor = 'white'">White</button>
+    <script>
+        document.onclick = function(e) {
+            const emojis = ['😀','😂','😭','😩','😤','🥶','🥵','😎','🤓','🥴','😵','🤯','😈','👿',];
+
+            const el = document.createElement('div')
+            el.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+            el.style.position = 'fixed';
+            el.style.left = e.clientX + 'px';
+            el.tyle.top = e.client.Y + 'px';
+            el.style.fontSize = '2rem';
+            el.style.pointerEvents = 'none';
+            document.body.appendChild(el);
+        }
+    </script>
     
 </body>
 </html>
